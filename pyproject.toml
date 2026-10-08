@@ -7,7 +7,9 @@ authors = [
     { name = "Rachel Rozy", email = "rayravengarden@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "fastapi[standard]>=0.143.0",
+]
 
 [project.scripts]
 taskboard = "taskboard:main"
