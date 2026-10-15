@@ -1,11 +1,3 @@
-from fastapi import FastAPI
+from taskboard.main import app, main
 
-app = FastAPI(title="TaskBoard")
-
-@app.get("/")
-def root():
-    return {"message": "Hello Web"}
-
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+__all__ = ["app", "main"]
